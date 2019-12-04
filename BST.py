@@ -3,8 +3,6 @@ class Node:
         self.left = None
         self.right = None
         self.val = key 
-  
-# A utility function to insert a new node with the given key 
 def insert(root,node): 
     if root is None: 
         root = node 
@@ -20,5 +18,19 @@ def insert(root,node):
             else: 
                 insert(root.left, node)
 
-                
-insert(r,Node(30)) 
+def inorder(root): 
+    if root: 
+        inorder(root.left) 
+        print(root.val) 
+        inorder(root.right)        
+
+array = [50, 20, 30, 40, 60]
+r = Node(array[0])
+
+def addArr(arr):
+    for i in range(len(arr)):
+        insert(r,Node(i))
+
+addArr(array)
+inorder(r) 
+
