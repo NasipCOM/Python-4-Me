@@ -1,39 +1,22 @@
+# x = int(input())
+# arrInp = []
 
-# import math 
-# def digitsNum(num,num2): 
+# for i in range (x):
+#     nums = int(input())
+#     arrInp.append(nums)
 
-#         if (num == 0) : 
-#             print("0", end = "") 
-      
-#         if (num % 9 != 0):  
-#             print (num % 9, end ="") 
+# def main(arr):
+#     for i in range (len(arr)):
+#         print(arr[i],(arr[i] * "0"))
 
-#         for i in range( 1, int(num / 9) + 1) : 
-#             print("9", end = "") 
-      
+# main(arrInp)
+def bonus():
+    test_cases = int(input())
+    num_list = []
+    for i in range(test_cases):
+        x = int(input())
+        num_list.append(x)
+    for i in num_list:
+        print(i * pow(10, i))
 
-#         for i in range(1, num + 5) : 
-#             print("0", end = "") 
-      
-#         print() 
-
-#         if (num2 == 0) : 
-#             print("0", end = "") 
-      
-#         if (num2 % 9 != 0):  
-#             print (num2 % 9, end ="") 
-
-#         for i in range( 1, int(num2 / 9) + 1) : 
-#             print("9", end = "") 
-      
-
-#         for i in range(1, num2+ 5) : 
-#             print("0", end = "") 
-      
-#         print() 
-# num = input()        
-# number = int(input())
-# number2 = int(input())
-# digitsNum(number,number2)        
-
-
+bonus()
