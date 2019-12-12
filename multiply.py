@@ -1,13 +1,16 @@
-def calculate_sum(N, a, b): 
-  
-    m1 = N / a 
-    m2 = N / b
 
-    sum = m1* (m1 + 1) / 2 + m2* (m2 + 1) / 2
+def multiplies(lenOf, num):
+    num.pop(0)
+    multiplies = 0
+    for i in range(1, lenOf):
+        for j in num:
+            if j == 0:
+                break
+            if i % j == 0:
+                multiplies += i
+                break
+    return multiplies
 
-    ans = a * sum + b * sum
-    
-    print( ans) 
-  
-# Driver Code 
-calculate_sum(20, 3, 5)
+array=list(map(int, input().split()))
+lenOf = array[0]
+print(multiplies(lenOf, array))
